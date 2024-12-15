@@ -1,0 +1,327 @@
+html {
+  overflow-x: hidden;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+body {
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+}
+
+#tit {
+  font-family: "cheroline";
+  font-size: 63px;
+}
+
+#boda {
+  font-family: "montserrat-regular";
+  font-size: 10px;
+}
+
+.reloj {
+}
+
+.row {
+  box-shadow: 1px 2px 5px;
+  padding: 20px 0px;
+}
+
+.num {
+  display: flex;
+  justify-content: space-around;
+  font-family: "montserrat-semibold";
+}
+
+.let {
+  display: flex;
+  justify-content: space-around;
+  font-family: "montserrat-regular";
+}
+
+.letrasReloj {
+  font-size: 7px;
+  margin-left: 6px;
+}
+.letrasRelojSeg {
+  font-size: 7px;
+  margin-left: 20px;
+  margin-right: -6px;
+}
+
+.datos {
+  font-family: "montserrat-regular";
+  font-size: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 5px;
+  width: 90%;
+  place-self: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.frase {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+p {
+  font-family: "cheroline";
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.padres {
+  font-family: "montserrat-semibolditalic";
+}
+
+.lugares {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+#mensaje {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#ceremonia {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.iglesiaSalon {
+  font-family: "montserrat-bold";
+}
+
+#civil {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#padrinos {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#nosotros {
+  font-family: "cheroline";
+  font-size: 60px;
+  line-height: 50%;
+  margin-top: 50px;
+}
+
+.footer {
+  font-family: "montserrat-regular";
+  font-size: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 5px;
+  width: 90%;
+  place-self: center;
+  padding: 40px 20px;
+  display: block;
+}
+
+#regalo {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.separador {
+  margin: 10px auto;
+}
+.ico {
+  margin: 10px auto;
+}
+
+#dresscode {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#confirmacion {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#asistencia {
+  font-family: "cheroline";
+  line-height: 60%;
+}
+
+#fecha {
+  font-family: "montserrat-ligthitalic";
+  font-size: 9px;
+}
+
+.boton {
+  font-family: "montserrat-bold";
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#seguinos {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#gracias {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#graciasFinal {
+  margin-top: -20px;
+  font-size: 60px;
+}
+
+#graciasFinal2 {
+  line-height: 15px;
+  margin-top: -40px;
+}
+
+#pFinal {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+footer {
+  padding-bottom: 25%;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #d7a844 0%,
+    #f3d490 25%,
+    #d7a844 100%
+  );
+  padding: 5px 25px;
+  text-align: center;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  display: block;
+  border: none;
+  font-family: "gothambold", sans-serif;
+  font-size: 13px;
+}
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 50%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  html {
+  }
+
+  header {
+  }
+
+  #logo {
+  }
+
+  .row {
+  }
+
+  .secciones {
+  }
+
+  #imgFinal {
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    width: 50%;
+  }
+  .row {
+  }
+
+  #imgFinal {
+  }
+
+  #teEspero {
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+  }
+  body {
+  }
+  .row {
+  }
+
+  #logo {
+  }
+
+  .separador {
+  }
+
+  .secciones {
+  }
+
+  #imgFinal {
+  }
+
+  #teEspero {
+  }
+}
+
+@font-face {
+  font-family: "cheroline";
+  src: url("fuentes/Cherolina.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("fuentes/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("fuentes/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url("fuentes/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-semibolditalic";
+  src: url("fuentes/Montserrat-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-ligthitalic";
+  src: url("fuentes/Montserrat-LightItalic.ttf");
+}
