@@ -9,6 +9,10 @@ body {
   overflow: hidden;
   text-align: center;
   margin: auto;
+  background-image: url("./imagenes/fondo.png");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
@@ -18,21 +22,27 @@ body {
 
 #tit {
   font-family: "cheroline";
-  font-size: 63px;
+  font-size: 80px;
+  margin-top: 60px;
+  line-height: 55px;
 }
 
 #boda {
   font-family: "montserrat-regular";
-  font-size: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
-.reloj {
+.reloj{
+  margin-top: 20px;
 }
 
 .row {
-  box-shadow: 1px 2px 5px;
+  box-shadow: 1px 0.4px 5px #888888;
   padding: 20px 0px;
+  background-color: rgb(255, 255, 255, .4);
 }
+
 
 .num {
   display: flex;
@@ -59,14 +69,15 @@ body {
 .datos {
   font-family: "montserrat-regular";
   font-size: 10px;
-  margin-top: 20px;
-  box-shadow: 0px 5px 5px;
-  width: 100%;
+  margin: 30px auto;
+  box-shadow: 1px 0.4px 5px #888888;
+  width: 70%;
   place-self: center;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
   place-items: center;
+  background-color: #fff;
 }
 
 .frase {
@@ -75,14 +86,14 @@ body {
     place-items: center;
 }
 
-p {
+.titulos {
   font-family: "cheroline";
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 50px;
 }
 
 .padres {
   font-family: "montserrat-semibolditalic";
+  margin-bottom: 10px;
 }
 
 .lugares {
@@ -97,8 +108,13 @@ p {
   place-items: center;
 }
 
+#sabado{
+  font-size: 50px;
+}
+
 #fechaDia{
-    margin-top: -20px;
+  margin-top: -25px;
+  font-size: 10px;
 }
 
 #ceremonia {
@@ -106,6 +122,11 @@ p {
   flex-direction: column;
   place-items: center;
 }
+
+#iglesia{
+  margin-top: -10px;
+}
+
 .iglesiaSalon {
   font-family: "montserrat-bold";
 }
@@ -116,7 +137,27 @@ p {
   place-items: center;
 }
 
+#civilFiesta{
+  line-height: 250%;
+  margin-top: 20px;
+}
+
+#pCivil{
+  margin-right: 20px;
+}
+
+#imgY{
+  margin-left: 10px;
+  margin-top: -50px;
+}
+
 #padrinos {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.fotos{
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -126,18 +167,27 @@ p {
   font-family: "cheroline";
   font-size: 60px;
   line-height: 50%;
-  margin-top: 50px;
+  width: 120%;
+  margin-top: -40px;
+  z-index: -1;
+  padding: 50px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#fotos2{
+  margin-top: -50px;
 }
 
 .footer {
   font-family: "montserrat-regular";
   font-size: 10px;
-  margin-top: 20px;
-  box-shadow: 0px 5px 5px;
-  width: 100%;
+  margin: 20px auto;
+  box-shadow: 1px 0.4px 5px #888888;
+  width: 70%;
   place-self: center;
   padding: 40px 20px;
   display: block;
+  background-color: #fff;
 }
 
 #regalo {
@@ -146,11 +196,16 @@ p {
   place-items: center;
 }
 
+#alias{
+  font-family: "montserrat-semibolditalic";
+}
+
 .separador {
-  margin: 10px auto;
+  margin: 15px auto;
 }
 .ico {
   margin: 10px auto;
+  width: 40px;
 }
 
 #dresscode {
@@ -168,6 +223,7 @@ p {
 #asistencia {
   font-family: "cheroline";
   line-height: 60%;
+  margin-bottom: 20px;
 }
 
 #fecha {
@@ -177,14 +233,32 @@ p {
 
 .boton {
   font-family: "montserrat-bold";
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 5px;
+  background-color: rgb(127, 127, 127);
+  border-radius: 20px;
+  border: none;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+.icoInsta{
+  margin-right: 5px;
+}
+
+
+#btnFede{
+  margin-top: 5px;
 }
 
 #seguinos {
   display: flex;
   flex-direction: column;
   place-items: center;
+}
+
+#txtSeguinos{
+  margin-top: -20px;
 }
 
 #gracias {
@@ -194,17 +268,17 @@ p {
 }
 
 #graciasFinal {
-  margin-top: -20px;
+  margin-top: -25px;
   font-size: 60px;
 }
 
 #graciasFinal2 {
   line-height: 15px;
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 #pFinal {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 25px;
 }
 
@@ -212,28 +286,14 @@ footer {
   padding-bottom: 25%;
 }
 
-.btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #d7a844 0%,
-    #f3d490 25%,
-    #d7a844 100%
-  );
-  padding: 5px 25px;
-  text-align: center;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 30px;
-  display: block;
-  border: none;
-  font-family: "gothambold", sans-serif;
-  font-size: 13px;
-}
-.btn-grad:hover {
-  background-position: right center;
-  color: #fff;
+.vinculo {
+  list-style: none;
   text-decoration: none;
+}
+
+.boton:hover {
+  background-color: black;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
