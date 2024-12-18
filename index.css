@@ -59,7 +59,7 @@ body {
 
 .letrasReloj {
    font-size: 9px;
-   margin-left: 32px;
+   margin-left: 31px;
 }
 .letrasRelojMin{
   font-size: 9px;
@@ -351,11 +351,11 @@ footer {
     
   .letrasReloj {
      font-size: 9px;
-     margin-left: 27px;
+     margin-left: 26px;
   }
   .letrasRelojMin{
     font-size: 9px;
-    margin-left: 18px;
+    margin-left: 17px;
   }
   .letrasRelojSeg {
     font-size: 9px;
