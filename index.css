@@ -299,6 +299,13 @@ footer {
   color: #fff;
 }
 
+#audio{
+  width: 30%;
+  margin-top: 10px;
+  opacity: 0.3;
+  display: flex;
+}
+
 @media (min-width: 768px) {
   body {
     width: 50%;
