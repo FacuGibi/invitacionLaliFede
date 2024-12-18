@@ -9,8 +9,8 @@ body {
   overflow: hidden;
   text-align: center;
   margin: auto;
-  background-image: url("./imagenes/fondo.png");
-  background-size:100% 100%;
+  background-image: url("./imagenes/fondo.jpg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -33,37 +33,41 @@ body {
   letter-spacing: 1px;
 }
 
-.reloj{
+.reloj {
   margin-top: 20px;
 }
 
 .row {
   box-shadow: 1px 0.4px 5px #888888;
   padding: 20px 0px;
-  background-color: rgb(255, 255, 255, .4);
+  background-color: rgb(255, 255, 255, 0.4);
 }
-
 
 .num {
   display: flex;
-  justify-content: space-around;
   font-family: "montserrat-semibold";
+}
+
+.numReloj{
+  margin-left: 33px;
 }
 
 .let {
   display: flex;
-  justify-content: space-around;
   font-family: "montserrat-regular";
 }
 
 .letrasReloj {
-  font-size: 7px;
-  margin-left: 6px;
+   font-size: 9px;
+   margin-left: 32px;
+}
+.letrasRelojMin{
+  font-size: 9px;
+  margin-left: 22px;
 }
 .letrasRelojSeg {
-  font-size: 7px;
-  margin-left: 20px;
-  margin-right: -6px;
+  font-size: 9px;
+  margin-left: 40px;
 }
 
 .datos {
@@ -81,9 +85,9 @@ body {
 }
 
 .frase {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 .titulos {
@@ -97,9 +101,9 @@ body {
 }
 
 .lugares {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 #mensaje {
@@ -108,11 +112,11 @@ body {
   place-items: center;
 }
 
-#sabado{
+#sabado {
   font-size: 50px;
 }
 
-#fechaDia{
+#fechaDia {
   margin-top: -25px;
   font-size: 10px;
 }
@@ -123,7 +127,7 @@ body {
   place-items: center;
 }
 
-#iglesia{
+#iglesia {
   margin-top: -10px;
 }
 
@@ -137,16 +141,16 @@ body {
   place-items: center;
 }
 
-#civilFiesta{
+#civilFiesta {
   line-height: 250%;
   margin-top: 20px;
 }
 
-#pCivil{
+#pCivil {
   margin-right: 20px;
 }
 
-#imgY{
+#imgY {
   margin-left: 10px;
   margin-top: -50px;
 }
@@ -157,7 +161,7 @@ body {
   place-items: center;
 }
 
-.fotos{
+.fotos {
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -174,7 +178,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-#fotos2{
+#fotos2 {
   margin-top: -50px;
 }
 
@@ -196,7 +200,7 @@ body {
   place-items: center;
 }
 
-#alias{
+#alias {
   font-family: "montserrat-semibolditalic";
 }
 
@@ -242,12 +246,11 @@ body {
   color: #fff;
 }
 
-.icoInsta{
+.icoInsta {
   margin-right: 5px;
 }
 
-
-#btnFede{
+#btnFede {
   margin-top: 5px;
 }
 
@@ -257,7 +260,7 @@ body {
   place-items: center;
 }
 
-#txtSeguinos{
+#txtSeguinos {
   margin-top: -20px;
 }
 
@@ -299,64 +302,57 @@ footer {
 @media (min-width: 768px) {
   body {
     width: 50%;
+    background-size: 50% 100%;
   }
 }
 
-@media (min-width: 321px) and (max-width: 480px) {
-  html {
-  }
-
-  header {
-  }
-
-  #logo {
-  }
-
-  .row {
-  }
-
-  .secciones {
-  }
-
-  #imgFinal {
-  }
-}
 
 @media (min-width: 481px) and (max-width: 767px) {
   body {
-    width: 50%;
+    width: 70%;
+    background-size: 70% 100%;
   }
-  .row {
+    
+  .numReloj{
+    margin-left: 44px;
   }
-
-  #imgFinal {
+    
+  .letrasReloj {
+     font-size: 9px;
+     margin-left: 42px;
   }
-
-  #teEspero {
+  .letrasRelojMin{
+    font-size: 9px;
+    margin-left: 30px;
+  }
+  .letrasRelojSeg {
+    font-size: 9px;
+    margin-left: 60px;
   }
 }
 
 @media (max-width: 320px) {
-  html {
+  .datos {
+    width: 80%;
   }
-  body {
+  .footer {
+    width: 80%;
   }
-  .row {
+  .numReloj{
+    margin-left: 28px;
   }
-
-  #logo {
+    
+  .letrasReloj {
+     font-size: 9px;
+     margin-left: 27px;
   }
-
-  .separador {
+  .letrasRelojMin{
+    font-size: 9px;
+    margin-left: 18px;
   }
-
-  .secciones {
-  }
-
-  #imgFinal {
-  }
-
-  #teEspero {
+  .letrasRelojSeg {
+    font-size: 9px;
+    margin-left: 26px;
   }
 }
 
